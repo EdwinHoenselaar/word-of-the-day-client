@@ -1,29 +1,14 @@
-# word
+# word of the day
 
-## Project setup
-```
-npm install
-```
+The client side of the word of the day app. For this app I use Vue.js with Vue-router.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+File structure:
+index.html                      Root html file
+src =
+    App.vue                     Root file
+    components =
+        NewWord.vue             Input form for entering a new word
+        Word.vue                Displays the word of today
+        
+For http requests I use axios, currently it only runs locally, its not deployed.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
