@@ -1,7 +1,7 @@
 # word of the day
 
 The client side of the word of the day app. For this app I use Vue.js with Vue-router.
-
+<br>
 File structure:
 index.html                      Root html file
 src =
