@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h1 class="word">{{this.currentWord[0].word}}</h1>
-    <h3 class="description">{{this.currentWord[0].description}}</h3>
+    <h1 class="word">{{this.currentWord.word}}</h1>
+    <h3 class="description">{{this.currentWord.description}}</h3>
   </div>
 </template>
 
@@ -37,8 +37,8 @@ export default {
     axios
       .get('http://localhost:3000/word')
       .then(res => {
-        this.currentWord = res.data.word
-        this.currentWord[0].word = this.capitalize(this.currentWord[0].word)
+        this.currentWord = res.data.word[0]
+        this.currentWord.word = this.capitalize(this.currentWord.word)
       })
       .catch(err => console.log(err))
   },
